@@ -1,0 +1,20 @@
+program: script.py
+project: ggg
+command:
+  - python
+  - ${program}
+  - --config
+  - configs/nc.yaml
+
+method: random
+metric:
+  goal: maximize
+  name: mean_val_accuracy
+
+parameters:
+  gen.init_args:
+    parameters:
+      mu:
+        values: [ 4., 5. ]
+      sigma:
+        values: [ 2., 2. ]

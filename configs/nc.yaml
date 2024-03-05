@@ -1,0 +1,6 @@
+gen:
+  class_path:
+    FakeResultGenerator
+#  init_args:
+#    mu: 1
+#    sigma: 1
